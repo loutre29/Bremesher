@@ -1,0 +1,7 @@
+# DESIGN.md 3.1 asks for channel "1.99". The machine's only installed toolchain is
+# stable-x86_64-pc-windows-msvc = rustc 1.99.1, and a channel named "1.99" would make
+# rustup download a second toolchain. "stable" is used instead and the workspace pins
+# rust-version = "1.99" in Cargo.toml (see CHANGES.md, Deviations).
+[toolchain]
+channel = "stable"
+targets = ["x86_64-pc-windows-msvc"]

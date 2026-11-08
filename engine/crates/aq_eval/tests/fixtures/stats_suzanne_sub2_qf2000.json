@@ -1,0 +1,41 @@
+{
+ "mesh": "baselines/suzanne_sub2_qf2000.obj",
+ "py": {
+  "boundary_edges": 6,
+  "edge_len_cv": 0.3074,
+  "face_sizes": {
+   "4": 1743
+  },
+  "faces": 1743,
+  "irregular_verts": 86,
+  "mean_angle_dev_deg": 11.49,
+  "nonmanifold_edges": 0,
+  "quad_ratio": 1.0,
+  "valence": {
+   "3": 52,
+   "4": 1664,
+   "5": 28,
+   "b4": 4,
+   "b5": 2
+  }
+ },
+ "raw": {
+  "boundary_edges": 6,
+  "edge_len_cv": 0.3073623461819598,
+  "face_sizes": {
+   "4": 1743
+  },
+  "faces": 1743,
+  "irregular_verts": 86,
+  "mean_angle_dev_deg": 11.494583229336934,
+  "nonmanifold_edges": 0,
+  "quad_ratio": 1.0,
+  "valence": {
+   "3": 52,
+   "4": 1664,
+   "5": 28,
+   "b4": 4,
+   "b5": 2
+  }
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "mesh": "baselines/cube_sharp_qf2000.obj",
+ "py": {
+  "boundary_edges": 0,
+  "edge_len_cv": 0.0052,
+  "face_sizes": {
+   "4": 1944
+  },
+  "faces": 1944,
+  "irregular_verts": 8,
+  "mean_angle_dev_deg": 0.21,
+  "nonmanifold_edges": 0,
+  "quad_ratio": 1.0,
+  "valence": {
+   "3": 8,
+   "4": 1938
+  }
+ },
+ "raw": {
+  "boundary_edges": 0,
+  "edge_len_cv": 0.005163824092955704,
+  "face_sizes": {
+   "4": 1944
+  },
+  "faces": 1944,
+  "irregular_verts": 8,
+  "mean_angle_dev_deg": 0.21092198227440223,
+  "nonmanifold_edges": 0,
+  "quad_ratio": 1.0,
+  "valence": {
+   "3": 8,
+   "4": 1938
+  }
+ }
+}

@@ -1,0 +1,287 @@
+{
+  "abi": 1,
+  "chains": 0,
+  "cli": {
+    "features": 0,
+    "input": "eval\\../testdata\\noisy_blob.obj",
+    "input_tris": 327680,
+    "keep_neg": false,
+    "normalize_scale": 2.681150834435336,
+    "output": "eval/results/M1_r2\\perf_noisy_blob_328k_s0.obj",
+    "reproject": false,
+    "sym": [],
+    "target_engine": 5000,
+    "target_full": 5000,
+    "total_s": 14.6107056,
+    "upsample": 1,
+    "warnings": []
+  },
+  "components": [
+    {
+      "R0_trace": {
+        "error": "[patch/invariant] patch 3: a quad corner Jacobian is not positive after the Floater re-mesh",
+        "field": {
+          "cancelled": 3,
+          "chains": 0,
+          "cones_final": 24,
+          "cones_initial": 30,
+          "eigen_path": false,
+          "max_abs_delta": 0.42722172909776646,
+          "proxy_faces": 101272,
+          "pushed": 0,
+          "reverted": 0,
+          "split": 0
+        },
+        "layout": {
+          "arcs": 176,
+          "health_frac": 0.0,
+          "health_max": 0.0,
+          "health_mean": 0.0,
+          "loops": 0,
+          "nodes": 112,
+          "patches": 66,
+          "seed_rounds": 0,
+          "seeds": 0,
+          "traces": 88,
+          "wfaces": 118458
+        },
+        "param": {
+          "e0": 286.86436471633095,
+          "e_final": 301.4419662905761,
+          "flips_after_stiff": 0,
+          "flips_initial": 5,
+          "folds_after_repair": 0,
+          "inconsistent": 0,
+          "loop_set": "None",
+          "loops": 0,
+          "loops_dropped": 0,
+          "loops_exact": 0,
+          "n_free": 101272,
+          "n_pred": 4999.999999999983,
+          "penalty_rows": 0,
+          "redundant": 0,
+          "repaired": 0,
+          "rows": 94,
+          "scale": 1.0367915884438903,
+          "skipped_cone": 0,
+          "untangled": 0
+        },
+        "quant": {
+          "count": 4986,
+          "count_err": -0.0028,
+          "cuts": 0,
+          "sigma": 1.0,
+          "solves": 1,
+          "zero_arcs": 13
+        }
+      },
+      "R1_trace": {
+        "error": "[patch/invariant] patch 1: a quad corner Jacobian is not positive after the Floater re-mesh",
+        "field": {
+          "cancelled": 0,
+          "chains": 0,
+          "cones_final": 14,
+          "cones_initial": 14,
+          "eigen_path": false,
+          "max_abs_delta": 0.36878031685617874,
+          "proxy_faces": 112458,
+          "pushed": 0,
+          "reverted": 0,
+          "split": 0
+        },
+        "layout": {
+          "arcs": 96,
+          "health_frac": 0.0,
+          "health_max": 0.0,
+          "health_mean": 0.0,
+          "loops": 0,
+          "nodes": 62,
+          "patches": 36,
+          "seed_rounds": 0,
+          "seeds": 0,
+          "traces": 48,
+          "wfaces": 125416
+        },
+        "param": {
+          "e0": 267.73370622170404,
+          "e_final": 279.7265266884035,
+          "flips_after_stiff": 0,
+          "flips_initial": 7,
+          "folds_after_repair": 0,
+          "inconsistent": 0,
+          "loop_set": "None",
+          "loops": 0,
+          "loops_dropped": 0,
+          "loops_exact": 0,
+          "n_free": 112458,
+          "n_pred": 4999.999999999854,
+          "penalty_rows": 0,
+          "redundant": 0,
+          "repaired": 0,
+          "rows": 50,
+          "scale": 1.0326877959011638,
+          "skipped_cone": 0,
+          "untangled": 0
+        },
+        "quant": {
+          "count": 5068,
+          "count_err": 0.0136,
+          "cuts": 0,
+          "sigma": 1.0,
+          "solves": 1,
+          "zero_arcs": 4
+        }
+      },
+      "area": 105.91213687136039,
+      "chi": 2,
+      "closed": true,
+      "cones": {
+        "other": 22,
+        "v3": 460,
+        "v5": 408
+      },
+      "debris": false,
+      "error": "",
+      "field": {},
+      "id": 0,
+      "layout": {
+        "arcs": 0,
+        "health_max": 0,
+        "health_mean": 0,
+        "patches": 0,
+        "seed_rounds": 0
+      },
+      "param": {},
+      "patch": {},
+      "post": {},
+      "quads": 5106,
+      "quant": {
+        "count_err": 0.0212,
+        "cuts": 0,
+        "sigma": 0,
+        "solves": 0
+      },
+      "rung": 2,
+      "status": "sf",
+      "target": 5000,
+      "time_ms": 14091.6846,
+      "tris": 327680,
+      "warnings": [
+        "R0 failed: [patch/invariant] patch 3: a quad corner Jacobian is not positive after the Floater re-mesh",
+        "R1 failed: [patch/invariant] patch 1: a quad corner Jacobian is not positive after the Floater re-mesh"
+      ]
+    }
+  ],
+  "count": {
+    "err": 0.0212,
+    "result": 5106,
+    "target": 5000
+  },
+  "count_correction": {
+    "improved": 0,
+    "ran": false,
+    "retried": 0
+  },
+  "engine": "M1",
+  "error": "",
+  "failed_tris": 0,
+  "h0": 0.14554184063104353,
+  "ingest": {
+    "collapsed_faces": 0,
+    "components": 1,
+    "dropped_faces": 0,
+    "dropped_features": 0,
+    "flipped_faces": 0,
+    "rerouted_features": 0,
+    "split_edges": 0,
+    "split_verts": 0
+  },
+  "params": {
+    "adaptive_size": 0.0,
+    "allow_collapse": 1,
+    "close_loops": 1,
+    "curvature_align": 1.0,
+    "debug_flags": 0,
+    "density_strength": 1.0,
+    "flow_smoothness": 1.0,
+    "guide_strength": 1.0,
+    "hard_edges": 2,
+    "max_proxy_tris": 150000,
+    "ring_min": 8,
+    "seed": 0,
+    "target_quads": 5000,
+    "threads": 0,
+    "time_limit_s": 60.0
+  },
+  "stats": {
+    "angle_dev_deg": 12.885556425919312,
+    "boundary_edges": 0,
+    "count": {
+      "err": 0.0212,
+      "result": 5106,
+      "target": 5000
+    },
+    "edge_cv": 0.14827457927641483,
+    "face_sizes": {
+      "4": 5106
+    },
+    "faces": 5106,
+    "hausdorff": {
+      "diag": 3.7297416734504796,
+      "h": {
+        "in_to_q_max": 0.5605888754604244,
+        "in_to_q_mean": 0.05352892613971441,
+        "q_to_in_max": 0.48616974969412263,
+        "q_to_in_mean": 0.04738614366791277,
+        "symmetric": 0.5605888754604244
+      },
+      "pct_diag": {
+        "in_to_q_max": 0.8158913677179701,
+        "in_to_q_mean": 0.07790698437377216,
+        "q_to_in_max": 0.7075804022961634,
+        "q_to_in_mean": 0.06896666569835094,
+        "symmetric": 0.8158913677179701
+      },
+      "quad_size_h": 0.05428334682322915,
+      "units": {
+        "in_to_q_max": 0.030430640351862225,
+        "in_to_q_mean": 0.0029057292627171338,
+        "q_to_in_max": 0.02639092113760856,
+        "q_to_in_mean": 0.0025722784713406725,
+        "symmetric": 0.030430640351862225
+      }
+    },
+    "irregular": 890,
+    "nonmanifold_edges": 0,
+    "quad_ratio": 1.0,
+    "valence": {
+      "3": 460,
+      "4": 4218,
+      "5": 408,
+      "6": 22
+    },
+    "vertex_distance": {
+      "max": 4.871083751574258e-16,
+      "max_h": 8.973440358120669e-15,
+      "mean": 9.42754426868596e-17,
+      "mean_h": 1.736728632334749e-15
+    }
+  },
+  "status": 1,
+  "timing_ms": {
+    "curv": -0.0,
+    "cut": -0.0,
+    "fallback": 14091.692500000001,
+    "field": -0.0,
+    "ingest": 300.4989,
+    "layout": -0.0,
+    "loops": -0.0,
+    "param": -0.0,
+    "patch": -0.0,
+    "post": -0.0,
+    "proxy": -0.0,
+    "quantize": -0.0,
+    "total": 14570.7384
+  },
+  "warnings": []
+}

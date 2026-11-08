@@ -1,0 +1,37 @@
+{
+ "mesh": "baselines/noisy_blob_qf5000.obj",
+ "py": {
+  "boundary_edges": 0,
+  "edge_len_cv": 0.2212,
+  "face_sizes": {
+   "4": 4188
+  },
+  "faces": 4188,
+  "irregular_verts": 14,
+  "mean_angle_dev_deg": 9.5,
+  "nonmanifold_edges": 0,
+  "quad_ratio": 1.0,
+  "valence": {
+   "3": 11,
+   "4": 4176,
+   "5": 3
+  }
+ },
+ "raw": {
+  "boundary_edges": 0,
+  "edge_len_cv": 0.22119255214688588,
+  "face_sizes": {
+   "4": 4188
+  },
+  "faces": 4188,
+  "irregular_verts": 14,
+  "mean_angle_dev_deg": 9.502266499069142,
+  "nonmanifold_edges": 0,
+  "quad_ratio": 1.0,
+  "valence": {
+   "3": 11,
+   "4": 4176,
+   "5": 3
+  }
+ }
+}

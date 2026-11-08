@@ -1,0 +1,11 @@
+[package]
+name = "aq_core"
+description = "Contracts, conventions C1..C15, topology, frames, BVH, projection, Ctl, errors, rng (DESIGN 4, 5, 6.1, WP-00)."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+rayon = { workspace = true }
+robust = { workspace = true }

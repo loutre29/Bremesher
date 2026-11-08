@@ -1,0 +1,25 @@
+schema_version = "1.0.0"
+
+id = "bremesher"
+version = "2.2.0"
+name = "BRemesher"
+tagline = "One click ZRemesher style quad retopology"
+maintainer = "Vincent"
+type = "add-on"
+
+blender_version_min = "4.2.0"
+
+license = ["SPDX:GPL-3.0-or-later"]
+
+tags = ["Mesh", "Modeling", "Sculpt"]
+
+# bin/bremesher_engine.dll is a Windows x64 build of the BRemesher engine.
+platforms = ["windows-x64"]
+
+[build]
+paths_exclude_pattern = [
+  "__pycache__/",
+  "/tests/",
+  "/.*",
+  "*.zip",
+]

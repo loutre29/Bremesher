@@ -1,0 +1,15 @@
+[package]
+name = "aq_linalg"
+description = "Sparse matrices, Cholesky (faer), PCG, exact elimination, Laplacians (DESIGN 6.3, WP-02)."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+aq_core = { workspace = true }
+faer = { workspace = true }
+rayon = { workspace = true }
+
+# No dev-dependency on aq_testkit: the tests carry their own small mesh generators
+# (tests/common), so this crate can be tested while aq_testkit is being written (CHANGES.md).

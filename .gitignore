@@ -1,0 +1,16 @@
+# build output and local Blender sandbox
+engine/target/
+engine/.bl_sandbox/
+__pycache__/
+*.pyc
+
+# work copies and scratch
+_wip/
+engine/eval/scratch/
+*.bak
+
+# per-run meshes from the eval batch (regenerable; summaries and reports are kept)
+engine/eval/results/**/*.obj
+
+# packaged add-on zips (published as GitHub releases)
+*.zip

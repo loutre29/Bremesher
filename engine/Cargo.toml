@@ -1,0 +1,61 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/aq_core",
+    "crates/aq_testkit",
+    "crates/aq_linalg",
+    "crates/aq_io",
+    "crates/aq_eval",
+    "crates/aq_prep",
+    "crates/aq_curv",
+    "crates/aq_field",
+    "crates/aq_loops",
+    "crates/aq_cut",
+    "crates/aq_param",
+    "crates/aq_layout",
+    "crates/aq_quantize",
+    "crates/aq_patch",
+    "crates/aq_post",
+    "crates/aq_fallback",
+    "crates/aq_engine",
+    "crates/aq_ffi",
+    "crates/aq_cli",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.99"
+publish = false
+
+# External crates allowed by DESIGN.md 3.3, pinned at WP-00 (see CHANGES.md "Pinned versions").
+# Nothing else may be added.
+[workspace.dependencies]
+faer = { version = "=0.24.4", default-features = false, features = ["std", "rayon", "sparse-linalg"] }
+rayon = "=1.12.0"
+robust = "=1.2.0"
+serde = { version = "=1.0.229", features = ["derive"] }
+serde_json = "=1.0.154"
+
+aq_core = { path = "crates/aq_core" }
+aq_testkit = { path = "crates/aq_testkit" }
+aq_linalg = { path = "crates/aq_linalg" }
+aq_io = { path = "crates/aq_io" }
+aq_eval = { path = "crates/aq_eval" }
+aq_prep = { path = "crates/aq_prep" }
+aq_curv = { path = "crates/aq_curv" }
+aq_field = { path = "crates/aq_field" }
+aq_loops = { path = "crates/aq_loops" }
+aq_cut = { path = "crates/aq_cut" }
+aq_param = { path = "crates/aq_param" }
+aq_layout = { path = "crates/aq_layout" }
+aq_quantize = { path = "crates/aq_quantize" }
+aq_patch = { path = "crates/aq_patch" }
+aq_post = { path = "crates/aq_post" }
+aq_fallback = { path = "crates/aq_fallback" }
+aq_engine = { path = "crates/aq_engine" }
+
+[profile.release]
+panic = "unwind"
+lto = "thin"
+codegen-units = 1

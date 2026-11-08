@@ -1,0 +1,16 @@
+[package]
+name = "aq_layout"
+description = "S8 exact uv motorcycle layout and T-mesh extraction (DESIGN 6.10, WP-11)."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+aq_core = { workspace = true }
+rayon = { workspace = true }
+robust = { workspace = true }
+
+[dev-dependencies]
+aq_testkit = { workspace = true }
+aq_io = { workspace = true }

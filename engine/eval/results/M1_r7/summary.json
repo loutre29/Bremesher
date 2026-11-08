@@ -1,0 +1,407 @@
+{
+  "baselines": "eval\\../baselines",
+  "engine": "M1",
+  "meshes": [
+    {
+      "irregular_lb": null,
+      "irregular_qf": 86,
+      "name": "suzanne_sub2",
+      "pass": false,
+      "qf": {
+        "angle_dev_deg": 11.494583229336898,
+        "edge_cv": 0.3073623461819601,
+        "faces": 1743,
+        "irregular": 86
+      },
+      "runs": [
+        {
+          "angle_dev_deg": 5.104054669030916,
+          "comp_status": [
+            "full",
+            "full",
+            "full"
+          ],
+          "count_err": -0.0315,
+          "edge_cv": 0.14232559192134478,
+          "error": "",
+          "faces": 1937,
+          "feature_cover": null,
+          "gates": [
+            {
+              "detail": "status 0",
+              "name": "success",
+              "pass": true
+            },
+            {
+              "detail": "1.0000 >= 1",
+              "name": "quad_ratio",
+              "pass": true
+            },
+            {
+              "detail": "0 components on SF or failed",
+              "name": "no_sf",
+              "pass": true
+            },
+            {
+              "detail": "|-0.0315| <= 0.1",
+              "name": "count_err",
+              "pass": true
+            },
+            {
+              "detail": "0.1423 <= 0.2000",
+              "name": "edge_cv",
+              "pass": true
+            },
+            {
+              "detail": "5.10 <= 11.49",
+              "name": "angle_dev",
+              "pass": true
+            },
+            {
+              "detail": "0.120 h <= 0.3 h",
+              "name": "vertex_dist",
+              "pass": true
+            },
+            {
+              "detail": "1.279 h <= 1 h",
+              "name": "hausdorff",
+              "pass": false
+            },
+            {
+              "detail": "2.57 s < 5 s",
+              "name": "time",
+              "pass": true
+            },
+            {
+              "detail": "44 <= 50",
+              "name": "irregular",
+              "pass": true
+            }
+          ],
+          "hausdorff_h": 1.2785986557500018,
+          "irregular": 44,
+          "irregular_at_corners": null,
+          "loops": null,
+          "open_edges": null,
+          "pass": false,
+          "quad_ratio": 1.0,
+          "seam_poles": null,
+          "seconds": 2.5650570999999998,
+          "seed": 0,
+          "status": 0,
+          "vertex_dist_h": 0.12015533089419338
+        }
+      ],
+      "seed0_pass": false,
+      "seeds_passed": 0,
+      "seeds_run": 1,
+      "target": 2000
+    },
+    {
+      "irregular_lb": null,
+      "irregular_qf": 36,
+      "name": "retopo_a",
+      "pass": false,
+      "qf": {
+        "angle_dev_deg": 11.823977051157367,
+        "edge_cv": 0.21541510998536387,
+        "faces": 1717,
+        "irregular": 36
+      },
+      "runs": [
+        {
+          "angle_dev_deg": 9.904610149515664,
+          "comp_status": [
+            "full",
+            "full",
+            "full",
+            "full",
+            "full",
+            "debris_sf",
+            "debris_sf",
+            "debris_sf",
+            "debris_sf"
+          ],
+          "count_err": 0.077,
+          "edge_cv": 0.5504304486155831,
+          "error": "",
+          "faces": 2154,
+          "feature_cover": null,
+          "gates": [
+            {
+              "detail": "status 0",
+              "name": "success",
+              "pass": true
+            },
+            {
+              "detail": "1.0000 >= 1",
+              "name": "quad_ratio",
+              "pass": true
+            },
+            {
+              "detail": "4 components on SF or failed",
+              "name": "no_sf",
+              "pass": false
+            },
+            {
+              "detail": "|+0.0770| <= 0.1",
+              "name": "count_err",
+              "pass": true
+            },
+            {
+              "detail": "0.5504 <= 0.2000",
+              "name": "edge_cv",
+              "pass": false
+            },
+            {
+              "detail": "9.90 <= 11.82",
+              "name": "angle_dev",
+              "pass": true
+            },
+            {
+              "detail": "0.717 h <= 0.3 h",
+              "name": "vertex_dist",
+              "pass": false
+            },
+            {
+              "detail": "1.393 h <= 1 h",
+              "name": "hausdorff",
+              "pass": false
+            },
+            {
+              "detail": "2.53 s < 5 s",
+              "name": "time",
+              "pass": true
+            },
+            {
+              "detail": "52 <= 24",
+              "name": "irregular",
+              "pass": false
+            }
+          ],
+          "hausdorff_h": 1.3926435573234535,
+          "irregular": 52,
+          "irregular_at_corners": null,
+          "loops": null,
+          "open_edges": null,
+          "pass": false,
+          "quad_ratio": 1.0,
+          "seam_poles": null,
+          "seconds": 2.534802,
+          "seed": 0,
+          "status": 0,
+          "vertex_dist_h": 0.7170525446076396
+        }
+      ],
+      "seed0_pass": false,
+      "seeds_passed": 0,
+      "seeds_run": 1,
+      "target": 2000
+    },
+    {
+      "irregular_lb": null,
+      "irregular_qf": 50,
+      "name": "retopo_c",
+      "pass": false,
+      "qf": {
+        "angle_dev_deg": 8.636341254462591,
+        "edge_cv": 0.1900152853780612,
+        "faces": 1911,
+        "irregular": 50
+      },
+      "runs": [
+        {
+          "angle_dev_deg": 9.904818528731978,
+          "comp_status": [
+            "full"
+          ],
+          "count_err": 0.002,
+          "edge_cv": 0.22799086690872497,
+          "error": "",
+          "faces": 2004,
+          "feature_cover": null,
+          "gates": [
+            {
+              "detail": "status 0",
+              "name": "success",
+              "pass": true
+            },
+            {
+              "detail": "1.0000 >= 1",
+              "name": "quad_ratio",
+              "pass": true
+            },
+            {
+              "detail": "0 components on SF or failed",
+              "name": "no_sf",
+              "pass": true
+            },
+            {
+              "detail": "|+0.0020| <= 0.1",
+              "name": "count_err",
+              "pass": true
+            },
+            {
+              "detail": "0.2280 <= 0.1900",
+              "name": "edge_cv",
+              "pass": false
+            },
+            {
+              "detail": "9.90 <= 8.64",
+              "name": "angle_dev",
+              "pass": false
+            },
+            {
+              "detail": "0.136 h <= 0.3 h",
+              "name": "vertex_dist",
+              "pass": true
+            },
+            {
+              "detail": "1.152 h <= 1 h",
+              "name": "hausdorff",
+              "pass": false
+            },
+            {
+              "detail": "2.91 s < 5 s",
+              "name": "time",
+              "pass": true
+            },
+            {
+              "detail": "38 <= 24",
+              "name": "irregular",
+              "pass": false
+            }
+          ],
+          "hausdorff_h": 1.1524627380177541,
+          "irregular": 38,
+          "irregular_at_corners": null,
+          "loops": null,
+          "open_edges": null,
+          "pass": false,
+          "quad_ratio": 1.0,
+          "seam_poles": null,
+          "seconds": 2.9103272000000002,
+          "seed": 0,
+          "status": 0,
+          "vertex_dist_h": 0.13610892482361175
+        }
+      ],
+      "seed0_pass": false,
+      "seeds_passed": 0,
+      "seeds_run": 1,
+      "target": 2000
+    },
+    {
+      "irregular_lb": null,
+      "irregular_qf": 32,
+      "name": "sculpt_cylinder",
+      "pass": false,
+      "qf": {
+        "angle_dev_deg": 8.382227638435973,
+        "edge_cv": 0.19724524791300477,
+        "faces": 1868,
+        "irregular": 32
+      },
+      "runs": [
+        {
+          "angle_dev_deg": 6.9357196194820325,
+          "comp_status": [
+            "full"
+          ],
+          "count_err": 0.0175,
+          "edge_cv": 0.22553108395449917,
+          "error": "",
+          "faces": 2035,
+          "feature_cover": null,
+          "gates": [
+            {
+              "detail": "status 0",
+              "name": "success",
+              "pass": true
+            },
+            {
+              "detail": "1.0000 >= 1",
+              "name": "quad_ratio",
+              "pass": true
+            },
+            {
+              "detail": "0 components on SF or failed",
+              "name": "no_sf",
+              "pass": true
+            },
+            {
+              "detail": "|+0.0175| <= 0.1",
+              "name": "count_err",
+              "pass": true
+            },
+            {
+              "detail": "0.2255 <= 0.1972",
+              "name": "edge_cv",
+              "pass": false
+            },
+            {
+              "detail": "6.94 <= 8.38",
+              "name": "angle_dev",
+              "pass": true
+            },
+            {
+              "detail": "0.043 h <= 0.3 h",
+              "name": "vertex_dist",
+              "pass": true
+            },
+            {
+              "detail": "1.683 h <= 1 h",
+              "name": "hausdorff",
+              "pass": false
+            },
+            {
+              "detail": "2.92 s < 5 s",
+              "name": "time",
+              "pass": true
+            },
+            {
+              "detail": "24 <= 16",
+              "name": "irregular",
+              "pass": false
+            },
+            {
+              "detail": "closed 0.765 >= 0.9",
+              "name": "loops",
+              "pass": false
+            }
+          ],
+          "hausdorff_h": 1.6831468158567937,
+          "irregular": 24,
+          "irregular_at_corners": null,
+          "loops": {
+            "closed": 39,
+            "closed_frac": 0.7647058823529411,
+            "helix_suspects": 1,
+            "loops": 51
+          },
+          "open_edges": null,
+          "pass": false,
+          "quad_ratio": 1.0,
+          "seam_poles": null,
+          "seconds": 2.9152021,
+          "seed": 0,
+          "status": 0,
+          "vertex_dist_h": 0.04266276213549078
+        }
+      ],
+      "seed0_pass": false,
+      "seeds_passed": 0,
+      "seeds_run": 1,
+      "target": 2000
+    }
+  ],
+  "meshes_passed": 0,
+  "milestone": "M1",
+  "pass": false,
+  "seeds": [
+    0
+  ],
+  "suite": "eval/suite.toml",
+  "suite_dir": "eval",
+  "testdata": "eval\\../testdata"
+}

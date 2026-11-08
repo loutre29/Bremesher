@@ -1,0 +1,45 @@
+{
+ "mesh": "baselines/retopo_b_qf2000.obj",
+ "py": {
+  "boundary_edges": 198,
+  "edge_len_cv": 0.2531,
+  "face_sizes": {
+   "4": 2065
+  },
+  "faces": 2065,
+  "irregular_verts": 38,
+  "mean_angle_dev_deg": 9.71,
+  "nonmanifold_edges": 0,
+  "quad_ratio": 1.0,
+  "valence": {
+   "3": 18,
+   "4": 1937,
+   "5": 11,
+   "b2": 4,
+   "b3": 185,
+   "b4": 7,
+   "b5": 2
+  }
+ },
+ "raw": {
+  "boundary_edges": 198,
+  "edge_len_cv": 0.25314283032343876,
+  "face_sizes": {
+   "4": 2065
+  },
+  "faces": 2065,
+  "irregular_verts": 38,
+  "mean_angle_dev_deg": 9.71012531301511,
+  "nonmanifold_edges": 0,
+  "quad_ratio": 1.0,
+  "valence": {
+   "3": 18,
+   "4": 1937,
+   "5": 11,
+   "b2": 4,
+   "b3": 185,
+   "b4": 7,
+   "b5": 2
+  }
+ }
+}

@@ -1,0 +1,26 @@
+[package]
+name = "aq_field"
+description = "S4 cross field, singularity edits, fixed-matching re-solve (DESIGN 6.6, WP-08)."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+aq_core = { workspace = true }
+aq_linalg = { workspace = true }
+# Only for the `proxies` test (feature `prep-proxies`); the library never uses it, so the default
+# build and tests do not depend on aq_prep (DESIGN 3.2). See CHANGES.md, WP-08 review.
+aq_prep = { workspace = true, optional = true }
+
+[features]
+prep-proxies = ["dep:aq_prep"]
+
+[[test]]
+name = "proxies"
+required-features = ["prep-proxies"]
+
+[dev-dependencies]
+aq_testkit = { workspace = true }
+aq_io = { workspace = true }
+rayon = { workspace = true }

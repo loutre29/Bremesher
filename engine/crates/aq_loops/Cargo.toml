@@ -1,0 +1,15 @@
+[package]
+name = "aq_loops"
+description = "S5 closed streamline loops (DESIGN 6.7, WP-09)."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+aq_core = { workspace = true }
+rayon = { workspace = true }
+
+[dev-dependencies]
+aq_testkit = { workspace = true }
+aq_io = { workspace = true }

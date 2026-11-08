@@ -1,0 +1,16 @@
+[package]
+name = "aq_curv"
+description = "S3 curvature at the quad scale and sizing (DESIGN 6.5, WP-07)."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+aq_core = { workspace = true }
+aq_linalg = { workspace = true }
+rayon = { workspace = true }
+
+[dev-dependencies]
+aq_testkit = { workspace = true }
+aq_io = { workspace = true }

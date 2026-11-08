@@ -1,0 +1,13 @@
+[package]
+name = "aq_testkit"
+description = "Dev-only synthetic meshes, analytic fields, params and TMeshes (DESIGN 6.2, WP-01b)."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+# aq_io and robust were dropped (CHANGES.md, WP-01b): the OBJ loader for testdata is a small
+# local one, so this crate does not wait on WP-01, and the exact predicates come through
+# aq_core::exact.
+[dependencies]
+aq_core = { workspace = true }

@@ -1,0 +1,270 @@
+{
+  "abi": 1,
+  "chains": 1,
+  "cli": {
+    "features": 0,
+    "input": "eval\\../testdata\\retopo_c.obj",
+    "input_tris": 4403,
+    "keep_neg": false,
+    "normalize_scale": 10.362348763100302,
+    "output": "eval/results/M1_r2\\retopo_c_s0.obj",
+    "reproject": false,
+    "sym": [],
+    "target_engine": 2000,
+    "target_full": 2000,
+    "total_s": 5.7666872,
+    "upsample": 0,
+    "warnings": []
+  },
+  "components": [
+    {
+      "R0_trace": {
+        "error": "[patch/invariant] patch 10: a quad corner Jacobian is not positive after the Floater re-mesh",
+        "field": {
+          "cancelled": 9,
+          "chains": 1,
+          "cones_final": 43,
+          "cones_initial": 62,
+          "eigen_path": false,
+          "max_abs_delta": 1.3207059176266354,
+          "proxy_faces": 41114,
+          "pushed": 8,
+          "reverted": 0,
+          "split": 4
+        },
+        "layout": {
+          "arcs": 288,
+          "health_frac": 0.0,
+          "health_max": 0.0,
+          "health_mean": 0.0,
+          "loops": 2,
+          "nodes": 185,
+          "patches": 104,
+          "seed_rounds": 1,
+          "seeds": 1,
+          "traces": 139,
+          "wfaces": 51437
+        },
+        "param": {
+          "e0": 131.68240260629355,
+          "e_final": 141.2060015671555,
+          "flips_after_stiff": 1,
+          "flips_initial": 15,
+          "folds_after_repair": 0,
+          "inconsistent": 0,
+          "loop_set": "All",
+          "loops": 2,
+          "loops_dropped": 0,
+          "loops_exact": 2,
+          "n_free": 41113,
+          "n_pred": 1999.9999999999795,
+          "penalty_rows": 0,
+          "redundant": 1,
+          "repaired": 0,
+          "rows": 428,
+          "scale": 1.0522850382554403,
+          "skipped_cone": 1,
+          "untangled": 1
+        },
+        "quant": {
+          "count": 2005,
+          "count_err": 0.0025,
+          "cuts": 46,
+          "sigma": 0.8910664306391036,
+          "solves": 6,
+          "zero_arcs": 37
+        }
+      },
+      "R1_trace": {
+        "error": "[layout/invariant] emitter vertex 17370 touches folded or degenerate face 37609",
+        "field": {
+          "cancelled": 7,
+          "chains": 1,
+          "cones_final": 45,
+          "cones_initial": 55,
+          "eigen_path": false,
+          "max_abs_delta": 1.3207059176266354,
+          "proxy_faces": 45538,
+          "pushed": 7,
+          "reverted": 0,
+          "split": 4
+        },
+        "param": {
+          "e0": 127.8846489304787,
+          "e_final": 138.5038477914722,
+          "flips_after_stiff": 4,
+          "flips_initial": 19,
+          "folds_after_repair": 1,
+          "inconsistent": 0,
+          "loop_set": "All",
+          "loops": 2,
+          "loops_dropped": 0,
+          "loops_exact": 2,
+          "n_free": 45537,
+          "n_pred": 1999.9999999999848,
+          "penalty_rows": 0,
+          "redundant": 1,
+          "repaired": 0,
+          "rows": 438,
+          "scale": 1.0526029596182263,
+          "skipped_cone": 3,
+          "untangled": 2
+        }
+      },
+      "area": 78.58466165101848,
+      "chi": 1,
+      "closed": false,
+      "cones": {
+        "other": 13,
+        "v3": 164,
+        "v5": 113
+      },
+      "debris": false,
+      "error": "",
+      "field": {},
+      "id": 0,
+      "layout": {
+        "arcs": 0,
+        "health_max": 0,
+        "health_mean": 0,
+        "patches": 0,
+        "seed_rounds": 0
+      },
+      "param": {},
+      "patch": {},
+      "post": {},
+      "quads": 2019,
+      "quant": {
+        "count_err": 0.0095,
+        "cuts": 0,
+        "sigma": 0,
+        "solves": 0
+      },
+      "rung": 2,
+      "status": "sf",
+      "target": 2000,
+      "time_ms": 5756.0805,
+      "tris": 4403,
+      "warnings": [
+        "R0 failed: [patch/invariant] patch 10: a quad corner Jacobian is not positive after the Floater re-mesh",
+        "R1 failed: [layout/invariant] emitter vertex 17370 touches folded or degenerate face 37609"
+      ]
+    }
+  ],
+  "count": {
+    "err": 0.0095,
+    "result": 2019,
+    "target": 2000
+  },
+  "count_correction": {
+    "improved": 0,
+    "ran": false,
+    "retried": 0
+  },
+  "engine": "M1",
+  "error": "",
+  "failed_tris": 0,
+  "h0": 0.19822293213831046,
+  "ingest": {
+    "collapsed_faces": 0,
+    "components": 1,
+    "dropped_faces": 0,
+    "dropped_features": 0,
+    "flipped_faces": 0,
+    "rerouted_features": 0,
+    "split_edges": 0,
+    "split_verts": 0
+  },
+  "params": {
+    "adaptive_size": 0.0,
+    "allow_collapse": 1,
+    "close_loops": 1,
+    "curvature_align": 1.0,
+    "debug_flags": 0,
+    "density_strength": 1.0,
+    "flow_smoothness": 1.0,
+    "guide_strength": 1.0,
+    "hard_edges": 2,
+    "max_proxy_tris": 150000,
+    "ring_min": 8,
+    "seed": 0,
+    "target_quads": 2000,
+    "threads": 0,
+    "time_limit_s": 60.0
+  },
+  "stats": {
+    "angle_dev_deg": 15.252842146494713,
+    "boundary_edges": 106,
+    "count": {
+      "err": 0.0095,
+      "result": 2019,
+      "target": 2000
+    },
+    "edge_cv": 0.16746405127719954,
+    "face_sizes": {
+      "4": 2019
+    },
+    "faces": 2019,
+    "hausdorff": {
+      "diag": 0.9650321783811596,
+      "h": {
+        "in_to_q_max": 3.8416719352823825,
+        "in_to_q_mean": 0.07227188058494985,
+        "q_to_in_max": 0.7882967283280596,
+        "q_to_in_mean": 0.032404753271143644,
+        "symmetric": 3.8416719352823825
+      },
+      "pct_diag": {
+        "in_to_q_max": 7.615074753251323,
+        "in_to_q_mean": 0.14325944080698608,
+        "q_to_in_max": 1.5625848888422529,
+        "q_to_in_mean": 0.06423365208624607,
+        "symmetric": 7.615074753251323
+      },
+      "quad_size_h": 0.01912915080065347,
+      "units": {
+        "in_to_q_max": 0.07348792177665496,
+        "in_to_q_mean": 0.0013824997023563256,
+        "q_to_in_max": 0.015079446991849214,
+        "q_to_in_mean": 0.0006198754119816756,
+        "symmetric": 0.07348792177665496
+      }
+    },
+    "irregular": 313,
+    "nonmanifold_edges": 0,
+    "quad_ratio": 1.0,
+    "valence": {
+      "3": 164,
+      "4": 1677,
+      "5": 113,
+      "6": 13,
+      "b2": 6,
+      "b3": 77,
+      "b4": 19,
+      "b5": 4
+    },
+    "vertex_distance": {
+      "max": 1.7253305394310741e-16,
+      "max_h": 9.019378630086053e-15,
+      "mean": 2.92755175684335e-17,
+      "mean_h": 1.5304138627749968e-15
+    }
+  },
+  "status": 1,
+  "timing_ms": {
+    "curv": -0.0,
+    "cut": -0.0,
+    "fallback": 5756.0829,
+    "field": -0.0,
+    "ingest": 4.0623,
+    "layout": -0.0,
+    "loops": -0.0,
+    "param": -0.0,
+    "patch": -0.0,
+    "post": -0.0,
+    "proxy": -0.0,
+    "quantize": -0.0,
+    "total": 5762.5244
+  },
+  "warnings": []
+}

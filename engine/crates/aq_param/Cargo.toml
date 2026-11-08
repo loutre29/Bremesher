@@ -1,0 +1,17 @@
+[package]
+name = "aq_param"
+description = "S7 seamless parametrization (DESIGN 6.9, WP-10)."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+aq_core = { workspace = true }
+aq_linalg = { workspace = true }
+rayon = { workspace = true }
+robust = { workspace = true }
+
+[dev-dependencies]
+aq_testkit = { workspace = true }
+aq_io = { workspace = true }

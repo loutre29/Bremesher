@@ -1,0 +1,15 @@
+[package]
+name = "aq_prep"
+description = "S0 ingest, S2 proxy remesh, chain classification, feature isolation (DESIGN 6.4, WP-03)."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+aq_core = { workspace = true }
+rayon = { workspace = true }
+
+[dev-dependencies]
+aq_testkit = { workspace = true }
+aq_io = { workspace = true }

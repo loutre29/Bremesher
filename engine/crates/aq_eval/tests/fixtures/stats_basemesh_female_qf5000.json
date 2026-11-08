@@ -1,0 +1,37 @@
+{
+ "mesh": "baselines/basemesh_female_qf5000.obj",
+ "py": {
+  "boundary_edges": 0,
+  "edge_len_cv": 0.3024,
+  "face_sizes": {
+   "4": 3839
+  },
+  "faces": 3839,
+  "irregular_verts": 136,
+  "mean_angle_dev_deg": 16.12,
+  "nonmanifold_edges": 0,
+  "quad_ratio": 1.0,
+  "valence": {
+   "3": 72,
+   "4": 3705,
+   "5": 64
+  }
+ },
+ "raw": {
+  "boundary_edges": 0,
+  "edge_len_cv": 0.3024172047710097,
+  "face_sizes": {
+   "4": 3839
+  },
+  "faces": 3839,
+  "irregular_verts": 136,
+  "mean_angle_dev_deg": 16.115237842165378,
+  "nonmanifold_edges": 0,
+  "quad_ratio": 1.0,
+  "valence": {
+   "3": 72,
+   "4": 3705,
+   "5": 64
+  }
+ }
+}

@@ -1,0 +1,248 @@
+{
+  "abi": 1,
+  "chains": 0,
+  "cli": {
+    "features": 0,
+    "input": "eval\\../testdata\\basemesh_female.obj",
+    "input_tris": 47914,
+    "keep_neg": false,
+    "normalize_scale": 0.7204354110699538,
+    "output": "eval/results/M1_r3\\basemesh_female_s0.obj",
+    "reproject": false,
+    "sym": [],
+    "target_engine": 5000,
+    "target_full": 5000,
+    "total_s": 18.4344797,
+    "upsample": 0,
+    "warnings": []
+  },
+  "components": [
+    {
+      "R0_trace": {
+        "error": "[layout/invariant] emitter vertex 7526 touches folded or degenerate face 54625",
+        "field": {
+          "cancelled": 68,
+          "chains": 0,
+          "cones_final": 136,
+          "cones_initial": 265,
+          "eigen_path": false,
+          "max_abs_delta": 1.1188737331858838,
+          "proxy_faces": 103312,
+          "pushed": 0,
+          "reverted": 1,
+          "split": 7
+        },
+        "param": {
+          "e0": 416.1711452213734,
+          "e_final": 450.3491810094722,
+          "flips_after_stiff": 11,
+          "flips_initial": 127,
+          "folds_after_repair": 6,
+          "inconsistent": 0,
+          "loop_set": "All",
+          "loops": 48,
+          "loops_dropped": 0,
+          "loops_exact": 48,
+          "n_free": 103290,
+          "n_pred": 5000.000000000012,
+          "penalty_rows": 0,
+          "redundant": 26,
+          "repaired": 0,
+          "rows": 480,
+          "scale": 1.0571996713882745,
+          "skipped_cone": 6,
+          "untangled": 5
+        }
+      },
+      "R1_trace": {
+        "error": "[layout/invariant] emitter vertex 8177 touches folded or degenerate face 20691",
+        "field": {
+          "cancelled": 71,
+          "chains": 0,
+          "cones_final": 136,
+          "cones_initial": 267,
+          "eigen_path": false,
+          "max_abs_delta": 0.8830771582707166,
+          "proxy_faces": 113896,
+          "pushed": 0,
+          "reverted": 1,
+          "split": 11
+        },
+        "param": {
+          "e0": 440.9466796540812,
+          "e_final": 483.5686202146454,
+          "flips_after_stiff": 20,
+          "flips_initial": 184,
+          "folds_after_repair": 6,
+          "inconsistent": 0,
+          "loop_set": "All",
+          "loops": 42,
+          "loops_dropped": 0,
+          "loops_exact": 42,
+          "n_free": 113878,
+          "n_pred": 5000.000000000047,
+          "penalty_rows": 0,
+          "redundant": 24,
+          "repaired": 0,
+          "rows": 468,
+          "scale": 1.0680494674601626,
+          "skipped_cone": 13,
+          "untangled": 14
+        }
+      },
+      "area": 37.51784265777733,
+      "chi": 2,
+      "closed": true,
+      "cones": {
+        "other": 56,
+        "v3": 451,
+        "v5": 329
+      },
+      "debris": false,
+      "error": "",
+      "field": {},
+      "id": 0,
+      "layout": {
+        "arcs": 0,
+        "health_max": 0,
+        "health_mean": 0,
+        "patches": 0,
+        "seed_rounds": 0
+      },
+      "param": {},
+      "patch": {},
+      "post": {},
+      "quads": 4914,
+      "quant": {
+        "count_err": -0.0172,
+        "cuts": 0,
+        "sigma": 0,
+        "solves": 0
+      },
+      "rung": 2,
+      "status": "sf",
+      "target": 5000,
+      "time_ms": 18355.439700000003,
+      "tris": 47914,
+      "warnings": [
+        "R0 failed: [layout/invariant] emitter vertex 7526 touches folded or degenerate face 54625",
+        "R1 failed: [layout/invariant] emitter vertex 8177 touches folded or degenerate face 20691"
+      ]
+    }
+  ],
+  "count": {
+    "err": -0.0172,
+    "result": 4914,
+    "target": 5000
+  },
+  "count_correction": {
+    "improved": 0,
+    "ran": false,
+    "retried": 0
+  },
+  "engine": "M1",
+  "error": "",
+  "failed_tris": 0,
+  "h0": 0.08662314085482854,
+  "ingest": {
+    "collapsed_faces": 0,
+    "components": 1,
+    "dropped_faces": 0,
+    "dropped_features": 0,
+    "flipped_faces": 0,
+    "rerouted_features": 0,
+    "split_edges": 0,
+    "split_verts": 0
+  },
+  "params": {
+    "adaptive_size": 0.0,
+    "allow_collapse": 1,
+    "close_loops": 1,
+    "curvature_align": 1.0,
+    "debug_flags": 0,
+    "density_strength": 1.0,
+    "flow_smoothness": 1.0,
+    "guide_strength": 1.0,
+    "hard_edges": 2,
+    "max_proxy_tris": 150000,
+    "ring_min": 8,
+    "seed": 0,
+    "target_quads": 5000,
+    "threads": 0,
+    "time_limit_s": 60.0
+  },
+  "stats": {
+    "angle_dev_deg": 14.80019549962616,
+    "boundary_edges": 0,
+    "count": {
+      "err": -0.0172,
+      "result": 4914,
+      "target": 5000
+    },
+    "edge_cv": 0.18075868850594662,
+    "face_sizes": {
+      "4": 4914
+    },
+    "faces": 4914,
+    "hausdorff": {
+      "diag": 13.880494831796943,
+      "h": {
+        "in_to_q_max": 5.2674024986848575,
+        "in_to_q_mean": 0.12497272296136905,
+        "q_to_in_max": 1.0992695049461945,
+        "q_to_in_mean": 0.0401060202960996,
+        "symmetric": 5.2674024986848575
+      },
+      "pct_diag": {
+        "in_to_q_max": 4.562789485826541,
+        "in_to_q_mean": 0.10825529784094132,
+        "q_to_in_max": 0.952221771643718,
+        "q_to_in_mean": 0.034741094452356465,
+        "symmetric": 4.562789485826541
+      },
+      "quad_size_h": 0.12023720589494659,
+      "units": {
+        "in_to_q_max": 0.6333377587659273,
+        "in_to_q_mean": 0.015026371021958248,
+        "q_to_in_max": 0.13217309380025158,
+        "q_to_in_mean": 0.004822235819969034,
+        "symmetric": 0.6333377587659273
+      }
+    },
+    "irregular": 836,
+    "nonmanifold_edges": 0,
+    "quad_ratio": 1.0,
+    "valence": {
+      "2": 1,
+      "3": 451,
+      "4": 4080,
+      "5": 329,
+      "6": 50,
+      "7": 4,
+      "8": 1
+    },
+    "vertex_distance": {
+      "max": 3.961567610280393e-15,
+      "max_h": 3.2947934716161706e-14,
+      "mean": 3.9403002065869394e-16,
+      "mean_h": 3.277105599101871e-15
+    }
+  },
+  "status": 1,
+  "timing_ms": {
+    "curv": -0.0,
+    "cut": -0.0,
+    "fallback": 18355.443,
+    "field": -0.0,
+    "ingest": 41.6234,
+    "layout": -0.0,
+    "loops": -0.0,
+    "param": -0.0,
+    "patch": -0.0,
+    "post": -0.0,
+    "proxy": -0.0,
+    "quantize": -0.0,
+    "total": 18420.9948
+  },
+  "warnings": []
+}

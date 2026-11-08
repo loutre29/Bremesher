@@ -1,0 +1,265 @@
+{
+  "abi": 1,
+  "chains": 0,
+  "cli": {
+    "features": 0,
+    "input": "eval\\../testdata\\double_torus.obj",
+    "input_tris": 31616,
+    "keep_neg": false,
+    "normalize_scale": 2.001509209131215,
+    "output": "eval/results/M2\\double_torus_s1.obj",
+    "reproject": false,
+    "sym": [],
+    "target_engine": 2000,
+    "target_full": 2000,
+    "total_s": 3.2827253,
+    "upsample": 0,
+    "warnings": []
+  },
+  "components": [
+    {
+      "area": 69.78753240595738,
+      "chi": -2,
+      "closed": true,
+      "cones": {
+        "other": 0,
+        "v3": 0,
+        "v5": 8
+      },
+      "debris": false,
+      "error": "",
+      "field": {
+        "boundary_merged": 0,
+        "cancelled": 0,
+        "cap_rerun": false,
+        "chains": 0,
+        "cones_final": 8,
+        "cones_initial": 8,
+        "corner_merged": 0,
+        "eigen_path": false,
+        "excess_poles": false,
+        "far_cancelled": 0,
+        "max_abs_delta": 0.419694795996457,
+        "merged_neg": 0,
+        "proxy_faces": 41976,
+        "pushed": 0,
+        "reverted": 0,
+        "s_ref": 16,
+        "split": 0
+      },
+      "id": 0,
+      "layout": {
+        "arcs": 141,
+        "health_frac": 0.0,
+        "health_max": 0.0,
+        "health_mean": 0.0,
+        "loops": 16,
+        "nodes": 83,
+        "patches": 56,
+        "seed_rounds": 1,
+        "seeds": 13,
+        "traces": 92,
+        "wfaces": 52626
+      },
+      "param": {
+        "bad_cones": 0,
+        "e0": 59.87465430472528,
+        "e_final": 60.820993519276676,
+        "flips_after_stiff": 0,
+        "flips_initial": 0,
+        "folds_after_repair": 0,
+        "inconsistent": 0,
+        "loop_set": "All",
+        "loops": 16,
+        "loops_dropped": 0,
+        "loops_exact": 16,
+        "n_free": 41973,
+        "n_pred": 2000.0000000000114,
+        "penalty_rows": 0,
+        "redundant": 13,
+        "repaired": 0,
+        "rows": 60,
+        "scale": 1.015366895196562,
+        "skipped_cone": 0,
+        "untangled": 0
+      },
+      "patch": {
+        "bad_quads": 0,
+        "barrier": 0,
+        "field_aligned": 40,
+        "floater": 0,
+        "remeshed": 0,
+        "split_edges": 122,
+        "zero_patches": 16
+      },
+      "post": {
+        "attracted": 0,
+        "chain_off": 0,
+        "count_err": -0.0135,
+        "diag_collapses": 0,
+        "doublets": 0,
+        "faces_after": 1973,
+        "faces_before": 1973,
+        "flipped_quads": 0,
+        "iters": 8,
+        "max_disp": 0.466885747980971,
+        "moved": 15736,
+        "projection_failed": 0,
+        "rejected_normal": 0,
+        "vdist_max": 7.951088352073423e-15,
+        "vdist_mean": 7.717242798388299e-16
+      },
+      "proxy": {
+        "faces": 41976,
+        "refined": false,
+        "small_h_area_frac": -0.0
+      },
+      "quads": 1973,
+      "quant": {
+        "count": 1973,
+        "count_err": -0.0135,
+        "cuts": 0,
+        "sigma": 1.0,
+        "solves": 1,
+        "zero_arcs": 24
+      },
+      "rung": 0,
+      "sizing": {
+        "cap_infeasible": false,
+        "capped_verts": 0,
+        "graded_verts": 0,
+        "h_max": 0.9992932318603917,
+        "h_min": 0.9992932318603917,
+        "thick_capped": 0,
+        "thick_floor": 0.7,
+        "thick_ms": 117.67030000000001,
+        "thick_share": 3.410605131648481e-16,
+        "thick_verts": 20952,
+        "tube_verts": 20888
+      },
+      "status": "full",
+      "target": 2000,
+      "time_ms": 3226.3459000000003,
+      "timing_ms_before_s8": [
+        "proxy:1157",
+        "curv:215",
+        "field:908",
+        "loops:77",
+        "cut:12",
+        "param:546"
+      ],
+      "tris": 31616,
+      "warnings": []
+    }
+  ],
+  "count": {
+    "err": -0.0135,
+    "result": 1973,
+    "target": 2000
+  },
+  "count_correction": {
+    "improved": 0,
+    "ran": false,
+    "retried": 0
+  },
+  "engine": "M1",
+  "error": "",
+  "failed_tris": 0,
+  "h0": 0.1867987318023832,
+  "ingest": {
+    "collapsed_faces": 0,
+    "components": 1,
+    "dropped_faces": 0,
+    "dropped_features": 0,
+    "flipped_faces": 0,
+    "rerouted_features": 0,
+    "split_edges": 0,
+    "split_verts": 0
+  },
+  "params": {
+    "adaptive_size": 0.0,
+    "allow_collapse": 1,
+    "close_loops": 1,
+    "curvature_align": 1.0,
+    "debug_flags": 0,
+    "density_strength": 1.0,
+    "flow_smoothness": 1.0,
+    "guide_strength": 1.0,
+    "hard_edges": 2,
+    "max_proxy_tris": 150000,
+    "ring_min": 8,
+    "seed": 1,
+    "target_quads": 2000,
+    "threads": 0,
+    "time_limit_s": 60.0
+  },
+  "stats": {
+    "angle_dev_deg": 3.1515736726841,
+    "boundary_edges": 0,
+    "count": {
+      "err": -0.0135,
+      "result": 1973,
+      "target": 2000
+    },
+    "edge_cv": 0.1277466982904219,
+    "face_sizes": {
+      "4": 1973
+    },
+    "faces": 1973,
+    "hausdorff": {
+      "diag": 4.996229822165369,
+      "h": {
+        "in_to_q_max": 0.32508521502190646,
+        "in_to_q_mean": 0.03599214813132662,
+        "q_to_in_max": 0.2648578314676639,
+        "q_to_in_mean": 0.03104948587650779,
+        "symmetric": 0.32508521502190646
+      },
+      "pct_diag": {
+        "in_to_q_max": 0.6072550589379703,
+        "in_to_q_mean": 0.06723287625775312,
+        "q_to_in_max": 0.4947510702608883,
+        "q_to_in_mean": 0.0580000458484765,
+        "symmetric": 0.6072550589379703
+      },
+      "quad_size_h": 0.09332893945737351,
+      "units": {
+        "in_to_q_max": 0.03033985835126676,
+        "in_to_q_mean": 0.0033591090138894017,
+        "q_to_in_max": 0.024718900517856843,
+        "q_to_in_mean": 0.00289781558755117,
+        "symmetric": 0.03033985835126676
+      }
+    },
+    "irregular": 8,
+    "nonmanifold_edges": 0,
+    "quad_ratio": 1.0,
+    "valence": {
+      "4": 1963,
+      "5": 8
+    },
+    "vertex_distance": {
+      "max": 0.00498951884276671,
+      "max_h": 0.05346164728514451,
+      "mean": 0.0002621689852999215,
+      "mean_h": 0.0028090856579342455
+    }
+  },
+  "status": 0,
+  "timing_ms": {
+    "curv": 215.4043,
+    "cut": 12.3595,
+    "fallback": -0.0,
+    "field": 908.2762,
+    "ingest": 28.313399999999998,
+    "layout": 172.0812,
+    "loops": 77.4371,
+    "param": 546.2586,
+    "patch": 20.965500000000002,
+    "post": 109.1048,
+    "proxy": 1157.1886,
+    "quantize": 1.0328,
+    "total": 3271.6392
+  },
+  "warnings": []
+}

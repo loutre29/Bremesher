@@ -1,0 +1,35 @@
+{
+ "mesh": "baselines/cylinder_open_qf2000.obj",
+ "py": {
+  "boundary_edges": 132,
+  "edge_len_cv": 0.0142,
+  "face_sizes": {
+   "4": 2046
+  },
+  "faces": 2046,
+  "irregular_verts": 0,
+  "mean_angle_dev_deg": 0.04,
+  "nonmanifold_edges": 0,
+  "quad_ratio": 1.0,
+  "valence": {
+   "4": 1980,
+   "b3": 132
+  }
+ },
+ "raw": {
+  "boundary_edges": 132,
+  "edge_len_cv": 0.01422835847075376,
+  "face_sizes": {
+   "4": 2046
+  },
+  "faces": 2046,
+  "irregular_verts": 0,
+  "mean_angle_dev_deg": 0.04225167701638237,
+  "nonmanifold_edges": 0,
+  "quad_ratio": 1.0,
+  "valence": {
+   "4": 1980,
+   "b3": 132
+  }
+ }
+}

@@ -1,0 +1,22 @@
+[package]
+name = "aq_ffi"
+description = "C ABI, autoquad_engine.dll (DESIGN 8, WP-05)."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+aq_core = { workspace = true }
+aq_engine = { workspace = true }
+serde_json = { workspace = true }
+
+[dev-dependencies]
+aq_io = { workspace = true }
+aq_testkit = { workspace = true }
+
+# rlib as well as cdylib so the tests call the exported functions directly
+# (CHANGES.md, WP-00 item 7). The DLL is autoquad_engine.dll.
+[lib]
+name = "autoquad_engine"
+crate-type = ["cdylib", "rlib"]

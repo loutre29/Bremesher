@@ -1,0 +1,195 @@
+# AutoQuad evaluation suite (DESIGN.md 10.1 and 10.3).
+#
+# Run:  autoquad batch --suite eval/suite.toml --out results/<milestone> --seeds 0..4
+#                      --compare baselines/ --markdown results/<milestone>/summary.md --gate M1
+#
+# Paths are relative to this file. Gates must hold for seed 0 and for at least
+# `seeds_required` of the seeds run (DESIGN 10.2 step 4). Irregular vertex counts use the
+# tools/quad_stats.py rules. Per-mesh gates carry the milestone suffix (_m1, _m2); the M0 gates
+# only ask for valid all-quad output (DESIGN 11.3).
+#
+# loop_axis: "all" checks every edge line (both families), "x"/"y"/"z" or "pca" (the largest
+# variance axis of the input) checks the circumferential lines about that axis.
+
+[suite]
+testdata = "../testdata"
+baselines = "../baselines"
+seeds = [0, 1, 2, 3, 4]
+seeds_required = 4
+# The edge CV gate is measured with adaptive 0 (DESIGN 10.3 "Edge CV (adaptive 0)").
+adaptive = 0.0
+time_limit_s = 60.0
+
+# M0, walking skeleton (DESIGN 11.3): valid all-quad output on every mesh and the perf input,
+# SF allowed, no per-mesh quality gates.
+[gates.M0]
+quad_ratio = 1.0
+allow_sf = true
+count_err = 0.25
+small_time_s = 5.0
+perf_time_s = 30.0
+vertex_dist_h = 0.3
+feature_cover_tol = 1e-6
+
+# M1 global gates (DESIGN 10.3).
+[gates.M1]
+quad_ratio = 1.0
+allow_sf = false
+count_err = 0.10
+edge_cv_cap = 0.20
+angle_dev_vs_qf = true
+vertex_dist_h = 0.3
+hausdorff_h = 1.0
+small_time_s = 5.0
+perf_time_s = 30.0
+# Feature edges covered by quad edges within 1e-6 (in units of a diagonal of 10).
+feature_cover_tol = 1e-6
+
+# M2 global gates (DESIGN 10.3).
+[gates.M2]
+quad_ratio = 1.0
+allow_sf = false
+count_err = 0.08
+edge_cv_cap = 0.20
+angle_dev_vs_qf = true
+vertex_dist_h = 0.3
+hausdorff_h = 1.0
+small_time_s = 5.0
+perf_time_s = 20.0
+feature_cover_tol = 1e-6
+
+[[mesh]]
+name = "torus"
+target = 2000
+features = "none"
+sym = ""
+loop_axis = "all"
+irregular_lb = 0
+irregular_qf = 14
+irregular_m1 = 0
+irregular_m2 = 0
+loops_min_m1 = 1.0
+loops_min_m2 = 1.0
+
+[[mesh]]
+name = "double_torus"
+target = 2000
+features = "none"
+sym = ""
+irregular_lb = 8
+irregular_qf = 36
+irregular_m1 = 12
+irregular_m2 = 10
+
+[[mesh]]
+name = "cube_sharp"
+target = 2000
+features = "auto"
+hard_angle = 30.0
+sym = ""
+irregular_lb = 8
+irregular_exact_m1 = 8
+irregular_exact_m2 = 8
+irregular_at_corners = true
+feature_cover = true
+
+[[mesh]]
+name = "cylinder_open"
+target = 2000
+features = "none"
+sym = ""
+loop_axis = "z"
+irregular_lb = 0
+irregular_m1 = 0
+irregular_m2 = 0
+loops_min_m1 = 1.0
+loops_min_m2 = 1.0
+
+[[mesh]]
+name = "suzanne_sub2"
+target = 2000
+features = "none"
+sym = ""
+irregular_qf = 86
+irregular_m1 = 50
+irregular_m2 = 40
+
+[[mesh]]
+name = "retopo_a"
+target = 2000
+features = "none"
+sym = ""
+irregular_qf = 36
+irregular_m1 = 24
+irregular_m2 = 20
+
+[[mesh]]
+name = "retopo_b"
+target = 2000
+features = "none"
+sym = ""
+irregular_qf = 38
+irregular_m1 = 24
+irregular_m2 = 20
+
+[[mesh]]
+name = "retopo_c"
+target = 2000
+features = "none"
+sym = ""
+irregular_qf = 50
+irregular_m1 = 24
+irregular_m2 = 20
+
+[[mesh]]
+name = "sculpt_cylinder"
+target = 2000
+features = "none"
+sym = ""
+loop_axis = "pca"
+irregular_qf = 32
+irregular_m1 = 16
+irregular_m2 = 12
+loops_min_m1 = 0.9
+loops_min_m2 = 1.0
+helix_max_m2 = 0
+
+[[mesh]]
+name = "basemesh_female"
+target = 5000
+features = "none"
+sym = ""
+irregular_qf = 136
+irregular_m1 = 90
+irregular_m2 = 80
+
+[[mesh]]
+name = "noisy_blob"
+target = 5000
+features = "none"
+sym = ""
+irregular_lb = 8
+irregular_qf = 14
+irregular_m1 = 14
+irregular_m2 = 10
+
+# QuadriFlow failed on this mesh: the gate is success, 0 open edges and 0 seam poles after the
+# mirror and weld.
+[[mesh]]
+name = "sculpt_sphere_mirror"
+target = 5000
+features = "none"
+sym = "x"
+open_edges_max = 0
+seam_poles_max = 0
+
+# Performance input: noisy_blob subdivided 1-to-4 once (81,920 to 327,680 triangles, the 328k
+# input of DESIGN 10.1 and 7.4; see CHANGES.md WP-05).
+[[mesh]]
+name = "perf_noisy_blob_328k"
+mesh = "noisy_blob"
+upsample = 1
+target = 5000
+features = "none"
+sym = ""
+perf = true

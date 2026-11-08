@@ -1,0 +1,15 @@
+[package]
+name = "aq_quantize"
+description = "S9 Bi-MDF quantization, validity, QComb (DESIGN 6.11, WP-12)."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+aq_core = { workspace = true }
+rayon = { workspace = true }
+
+# aq_io was dropped from the dev-dependencies (unused; CHANGES.md, WP-12).
+[dev-dependencies]
+aq_testkit = { workspace = true }

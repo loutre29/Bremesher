@@ -1,0 +1,30 @@
+[package]
+name = "aq_engine"
+description = "Orchestration, components, fallback ladder, budgets, report (DESIGN 7, WP-05/WP-16)."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+aq_core = { workspace = true }
+aq_linalg = { workspace = true }
+aq_io = { workspace = true }
+aq_eval = { workspace = true }
+aq_prep = { workspace = true }
+aq_curv = { workspace = true }
+aq_field = { workspace = true }
+aq_loops = { workspace = true }
+aq_cut = { workspace = true }
+aq_param = { workspace = true }
+aq_layout = { workspace = true }
+aq_quantize = { workspace = true }
+aq_patch = { workspace = true }
+aq_post = { workspace = true }
+aq_fallback = { workspace = true }
+rayon = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+[dev-dependencies]
+aq_testkit = { workspace = true }

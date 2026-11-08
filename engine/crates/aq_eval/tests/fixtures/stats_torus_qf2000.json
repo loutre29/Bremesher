@@ -1,0 +1,37 @@
+{
+ "mesh": "baselines/torus_qf2000.obj",
+ "py": {
+  "boundary_edges": 0,
+  "edge_len_cv": 0.1068,
+  "face_sizes": {
+   "4": 2153
+  },
+  "faces": 2153,
+  "irregular_verts": 14,
+  "mean_angle_dev_deg": 6.92,
+  "nonmanifold_edges": 0,
+  "quad_ratio": 1.0,
+  "valence": {
+   "3": 7,
+   "4": 2139,
+   "5": 7
+  }
+ },
+ "raw": {
+  "boundary_edges": 0,
+  "edge_len_cv": 0.10677912126808459,
+  "face_sizes": {
+   "4": 2153
+  },
+  "faces": 2153,
+  "irregular_verts": 14,
+  "mean_angle_dev_deg": 6.915450323005101,
+  "nonmanifold_edges": 0,
+  "quad_ratio": 1.0,
+  "valence": {
+   "3": 7,
+   "4": 2139,
+   "5": 7
+  }
+ }
+}
